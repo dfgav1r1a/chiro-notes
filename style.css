@@ -1,0 +1,55 @@
+* {
+  border: solid black 1px;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.cervical-range, 
+.lumbar-range,
+.motor,
+sensory {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.cervical-range > * {
+  flex-basis: 14%;
+}
+
+.motor,
+.sensory {
+  flex-basis: 100%;
+}
+
+.cervical-range > h2,
+.lumbar-range > h2,
+.motor > h2,
+.sensory > h2 {
+  flex: 100%;
+}
+
+.cervical-range input,
+.lumbar-range input {
+  width: 40px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.section-three {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
