@@ -1,5 +1,5 @@
 * {
-  border: solid black 1px;
+  /* border: solid black 1px; */
   margin: 0;
   padding: 0;
 }
@@ -23,10 +23,13 @@ sensory {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 1em;
+  gap: 2px;
+  padding-bottom: 2px;
 }
 
-.cervical-range > * {
-  flex-basis: 14%;
+.cervical-range > *,
+.lumbar-range > * {
+  flex-basis: 13%;
 }
 
 .motor,
@@ -39,6 +42,7 @@ sensory {
 .motor > h2,
 .sensory > h2 {
   flex: 100%;
+  margin-bottom: 2px;
 }
 
 .cervical-range input,
