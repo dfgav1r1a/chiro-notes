@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <div class='header'>
+  <header class='header'>
     <div id='today-date'>
       <label for='date'>Date:</label>
       <input type="date" id='date'name='date'>
@@ -22,9 +22,9 @@
       <label for='dob'>DOB:</label>
       <input type="date" id='dob' name='dob'>
     </div>
-  </div>
+  </header>
 
-  <div class='cervical-range'>
+  <section class='cervical-range'>
     <h2>Cervical Range of Motion</h2>
     
     <p>Flexion reduced by</p>
@@ -74,9 +74,9 @@
     <p>Full normal active range</p>
     <input type='checkbox'>
     <p>end range pain</p>
-  </div>
+  </section>
 
-  <div class='lumbar-range'>
+  <section class='lumbar-range'>
     <h2>Lumbar Range of Motion</h2>
     
     <p>Flexion reduced by</p>
@@ -126,18 +126,160 @@
     <p>Full normal active range</p>
     <input type='checkbox'>
     <p>end range pain</p>
-  </div>
-  <div class='section-three'>
-    <div class='motor'>
-      <h2>Motor:</h2>
-      
-    </div>
-  
-    <div class='sensory'>
-      <h2>Sensory:</h2>
-      
-    </div>
-  </div>
+  </section>
+    
+  <section class='section-three'>
+
+  <!--for motor-->
+
+    <table id='motor'>
+      <thead>
+        <tr>
+          <th>Motor:</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>C5:</td>
+          <td>R: <input type="number"> /5</td>
+          <td>L: <input type="number"> /5</td>
+          <td>L1-3: R+ <input type='number'> /5</td>
+          <td>L+ <input type='number'> /5</td>
+        </tr>
+        <tr>
+          <td>C6:</td>
+          <td>R: <input type="number"> /5</td>
+          <td>L: <input type="number"> /5</td>
+          <td>L1-3: R+ <input type='number'> /5</td>
+          <td>L+ <input type='number'> /5</td>
+        </tr>
+        <tr>
+          <td>C7:</td>
+          <td>R: <input type="number"> /5</td>
+          <td>L: <input type="number"> /5</td>
+          <td>L1-3: R+ <input type='number'> /5</td>
+          <td>L+ <input type='number'> /5</td>
+        </tr>
+        <tr>
+          <td>C8:</td>
+          <td>R: <input type="number"> /5</td>
+          <td>L: <input type="number"> /5</td>
+          <td>L1-3: R+ <input type='number'> /5</td>
+          <td>L+ <input type='number'> /5</td>
+        </tr>
+        <tr>
+          <td>T1:</td>
+          <td>R: <input type="number"> /5</td>
+          <td>L: <input type="number"> /5</td>
+        </tr>
+      </tbody>
+    </table>
+    
+  <!--for sensory-->
+
+    <table id='sensory'>
+      <thead>
+        <tr>
+          <th>Sensory:</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Light Touch:</td>
+          <td>C5 - T1 Bilat</td>
+          <td>WNL /</td>
+          <td>Hypo /</td>
+          <td>Hyper</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>L1 - S1 Bilat</td>
+          <td>WNL /</td>
+          <td>Hypo /</td>
+          <td>Hyper</td>
+        </tr>
+      </tbody>
+    </table>
+
+  <!--for reflexes and peripheral pulse-->
+    <table id='reflexes-peripheral'>
+      <thead>
+        <tr>
+          <th>Reflexes:</th>
+          <th>Peripheral Pulse:</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><label for='biceps'>Biceps: +</label>
+            <select name='biceps' id='biceps'>
+              <option value='+'>+</option>
+              <option value='-'>-</option>
+            </select>
+          </td>
+          <td>
+            <label for='popliteal'>Popliteal: +</label>
+            <select name='popliteal' id='popliteal'>
+              <option value='+'>+</option>
+              <option value='-'>-</option>
+            </select>
+            bilat
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for='extensor-digitorum'>Extensor Digitorum: +</label>
+            <select name='extensor-digitorum' id='extensor-digitorum'>
+              <option value='+'>+</option>
+              <option value='-'>-</option>
+            </select>
+          </td>
+          <td>
+            <label for='dorsalis-pedis'>Dorsalis Pedis: +</label>
+            <select name='dorsalis-pedis' id='dorsalis-pedis'>
+              <option value='+'>+</option>
+              <option value='-'>-</option>
+            </select>
+            bilat
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for='patellar'>Patellar: +</label>
+            <select name='patellar' id='patellar'>
+              <option value='+'>+</option>
+              <option value='-'>-</option>
+            </select>
+          </td>
+          <td>
+            <label for='radial'>Radial: +</label>
+            <select name='radial' id='radial'>
+              <option value='+'>+</option>
+              <option value='-'>-</option>
+            </select>
+            bilat
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for='achilles'>Achilles: +</label>
+            <select name='achilles' id='achilles'>
+              <option value='+'>+</option>
+              <option value='-'>-</option>
+            </select>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <label for='babinsky'>Babinsky:</label>
+            <input type='text' name='babinsky' id='babinsky'>
+          </td>
+        </tr>
+        <td></td>
+      </tbody>
+    </table>
+  </section>
   
   <script src="script.js"></script>
 

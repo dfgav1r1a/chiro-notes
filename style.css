@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 * {
   /* border: solid black 1px; */
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 html {
@@ -11,7 +14,7 @@ html {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 1em;
 }
 
@@ -38,9 +41,7 @@ sensory {
 }
 
 .cervical-range > h2,
-.lumbar-range > h2,
-.motor > h2,
-.sensory > h2 {
+.lumbar-range > h2 {
   flex: 100%;
   margin-bottom: 2px;
 }
@@ -52,8 +53,28 @@ sensory {
   text-align: center;
 }
 
-.section-three {
+/* .section-three {
   display: flex;
   flex-wrap: wrap;
   width: 50%;
+} */
+
+#motor,
+#sensory,
+#reflexes-peripheral {
+  margin-bottom: 5px;
+}
+
+#motor th,
+#sensory th,
+#reflexes-peripheral th {
+  font-size: 1.5em;
+}
+
+#reflexes-peripheral th{
+  text-align: left;
+}
+
+#reflexes-peripheral input {
+  width: 30px;
 }
