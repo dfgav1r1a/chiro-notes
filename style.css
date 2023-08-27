@@ -4,11 +4,11 @@
   /* border: solid black 1px; */
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
 }
 
 html {
   height: 100%;
+  font-family: 'Montserrat', sans-serif;
   width: 100%;
 }
 
@@ -32,7 +32,7 @@ sensory {
 
 .cervical-range > *,
 .lumbar-range > * {
-  flex-basis: 13%;
+  flex-basis: 15%;
 }
 
 .motor,
@@ -65,6 +65,13 @@ sensory {
   margin-bottom: 5px;
 }
 
+#wnl,
+#hypo,
+#hyper {
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 #motor th,
 #sensory th,
 #reflexes-peripheral th {
@@ -77,4 +84,5 @@ sensory {
 
 #reflexes-peripheral input {
   width: 30px;
+  border-radius: 5px;
 }

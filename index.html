@@ -187,16 +187,16 @@
         <tr>
           <td>Light Touch:</td>
           <td>C5 - T1 Bilat</td>
-          <td>WNL /</td>
-          <td>Hypo /</td>
-          <td>Hyper</td>
+          <td><span id="wnl">WNL</span> /</td>
+          <td><span id="hypo">Hypo</span> /</td>
+          <td><span id="hyper">Hyper</span></td>
         </tr>
         <tr>
           <td></td>
           <td>L1 - S1 Bilat</td>
-          <td>WNL /</td>
-          <td>Hypo /</td>
-          <td>Hyper</td>
+          <td><span id="wnl">WNL</span> /</td>
+          <td><span id="hypo">Hypo</span> /</td>
+          <td><span id="hyper">Hyper</span></td>
         </tr>
       </tbody>
     </table>
@@ -280,7 +280,157 @@
       </tbody>
     </table>
   </section>
-  
+
+  <section>
+    <table id='orthopedic-test'>
+      <thead>
+        <tr>
+          <th>Orthopedic Tests:</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <label for='foramidal'>Max Foraminal Compression:</label>  
+            <span>(<input type="text" id="foramidal" name="foramidal">)</span> 
+            <label for='foramidal-pain'>positive for pain</label>
+            <input type="text" name='foramidal-pain' id="foramidal-pain">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="cervical-distraction">Cervical Distraction:</label>
+            <span>(<input type="text" name="cervical-distraction" id="cervical-distraction">)</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for='shoulder-depression'>Shoulder Depression:</label>  
+            <span>(<input type="text" id="shoulder-depression" name="shoulder-depression">)</span> 
+            <label for='shoulder-pain'>positive for pain</label>
+            <input type="text" name='shoulder-pain' id="shoulder-pain">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for='slr'>SLR</label>
+            <span>(<input type="text" id="slr" name="slr">)</span>
+            <label for='slr-pain'>pain @</label>
+            <input type="text" id="slr-pain" name='slr-pain'>
+            <span>degrees</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for='wlr'>WLR</label>
+            <span>(<input type="text" id="wlr" name="wlr">)</span>
+            <label for='wlr-pain'>pain @</label>
+            <input type="text" id="wlr-pain" name='wlr-pain'>
+            <span>degrees</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for='p-faber'>Patrick FABER</label>
+            <span>(<input type="text" id="p-faber" name="p-faber">)</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for='gaenslens'>Gaenslens:</label>
+            <span>(<input type="text" id="gaenslens" name="gaenslens">)</span>
+            <span>L</span>
+            <span>R</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for='ortho-test-other'>Other:</label>
+            <input type="text" name="ortho-test-other" id="ortho-test-other">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <input type="text" name="myospasm" id='myospasm'><label for="myospasm">Myospasm</label></tr>
+          </td>
+        <tr>
+          <td>
+            <input type="text" name="point-tenderness" id='point-tenderness'><label for="point-tenderness">Point Tenderness</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" name="trigger-points" id='trigger-points'><label for="trigger-points">Trigger Points</label>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <table>
+      <thead>
+        <tr>
+          <th colspan='13'><span id="c">C</span><span id="t">T</span><span id="l">L</span><span id="extremity">Extremity</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>C:</td>
+          <td>0</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>T</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>T:</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>L:</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td colspan='2'>SI</td>
+          <td colspan='2'>L</td>
+          <td colspan='2'>R</td>
+          <td colspan="3">Short Leg</td>
+          <td colspan="2"><label for='short-leg-r'>R</label><input type="text" name="short-leg-r" id="short-leg-r"></td>
+          <td colspan="2"><label for='short-leg-l'>L</label><input type="text" name="short-leg-l" id="short-leg-l"></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
   <script src="script.js"></script>
 
  
