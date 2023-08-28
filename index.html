@@ -141,36 +141,40 @@
       <tbody>
         <tr>
           <td>C5:</td>
-          <td>R: <input type="number"> /5</td>
-          <td>L: <input type="number"> /5</td>
-          <td>L1-3: R+ <input type='number'> /5</td>
-          <td>L+ <input type='number'> /5</td>
+          <td><label for="c5-r":>R:</label> <input type="number" min='0' max="5" name="c5-r" id="c5-r"> /5</td>
+          <td><label for="c5-l":>L: <input type="number" min='0' max="5" name="c5-l" id="c5-l"> /5</td>
+          <td>L1-3:</td>
+          <td><label for='l1-3-r'>R+</label> <input type='number' min='0' max="5" name="l1-3-r" id="l1-3-r"> /5</td>
+          <td><label for="l1-3-l">L+</label> <input type='number' min='0' max="5" name="l1-3-l" id="l1-3-l"> /5</td>
         </tr>
         <tr>
           <td>C6:</td>
-          <td>R: <input type="number"> /5</td>
-          <td>L: <input type="number"> /5</td>
-          <td>L1-3: R+ <input type='number'> /5</td>
-          <td>L+ <input type='number'> /5</td>
+          <td><label for="c6-r":>R:</label> <input type="number" min='0' max="5" name="c6-r" id="c6-r"> /5</td>
+          <td><label for="c6-l":>L: <input type="number" min='0' max="5" name="c6-l" id="c6-l"> /5</td>
+          <td>L4:</td>
+          <td><label for='l4-r'>R+</label> <input type='number' min='0' max="5" name="l4-r" id="l4-r"> /5</td>
+          <td><label for="l4-l">L+</label> <input type='number' min='0' max="5" name="l4-l" id="l4-l"> /5</td>
         </tr>
         <tr>
           <td>C7:</td>
-          <td>R: <input type="number"> /5</td>
-          <td>L: <input type="number"> /5</td>
-          <td>L1-3: R+ <input type='number'> /5</td>
-          <td>L+ <input type='number'> /5</td>
+          <td><label for="c7-r":>R:</label> <input type="number" min='0' max="5" name="c7-r" id="c7-r"> /5</td>
+          <td><label for="c7-l":>L: <input type="number" min='0' max="5" name="c7-l" id="c7-l"> /5</td>
+          <td>L5:</td>
+          <td><label for='l5-r'>R+</label> <input type='number' min='0' max="5" name="l5-r" id="l5-r"> /5</td>
+          <td><label for="l5-l">L+</label> <input type='number' min='0' max="5" name="l5-l" id="l5-l"> /5</td>
         </tr>
         <tr>
           <td>C8:</td>
-          <td>R: <input type="number"> /5</td>
-          <td>L: <input type="number"> /5</td>
-          <td>L1-3: R+ <input type='number'> /5</td>
-          <td>L+ <input type='number'> /5</td>
+          <td><label for="c8-r":>R:</label> <input type="number" min='0' max="5" name="c8-r" id="c8-r"> /5</td>
+          <td><label for="c8-l":>L: <input type="number" min='0' max="5" name="c8-l" id="c8-l"> /5</td>
+          <td>S1:</td>
+          <td><label for='s1-r'>R+</label> <input type='number' min='0' max="5" name="s1-r" id="s1-r"> /5</td>
+          <td><label for="s1-l">L+</label> <input type='number' min='0' max="5" name="s1-l" id="s1-l"> /5</td>
         </tr>
         <tr>
           <td>T1:</td>
-          <td>R: <input type="number"> /5</td>
-          <td>L: <input type="number"> /5</td>
+          <td><label for="t1-r":>R:</label> <input type="number" min='0' max="5" name="t1-r" id="t1-r"> /5</td>
+          <td><label for="t1-l":>L: <input type="number" min='0' max="5" name="t1-l" id="t1-l"> /5</td>
         </tr>
       </tbody>
     </table>
@@ -187,15 +191,15 @@
         <tr>
           <td>Light Touch:</td>
           <td>C5 - T1 Bilat</td>
-          <td><span id="wnl">WNL</span> /</td>
-          <td><span id="hypo">Hypo</span> /</td>
+          <td><span id="wnl">WNL</span><span>/</span></td>
+          <td><span id="hypo">Hypo</span><span>/</span></td>
           <td><span id="hyper">Hyper</span></td>
         </tr>
         <tr>
           <td></td>
           <td>L1 - S1 Bilat</td>
-          <td><span id="wnl">WNL</span> /</td>
-          <td><span id="hypo">Hypo</span> /</td>
+          <td><span id="wnl">WNL</span><span> /</span></td>
+          <td><span id="hypo">Hypo</span> <span>/</span></td>
           <td><span id="hyper">Hyper</span></td>
         </tr>
       </tbody>
@@ -212,68 +216,47 @@
       <tbody>
         <tr>
           <td><label for='biceps'>Biceps: +</label>
-            <select name='biceps' id='biceps'>
-              <option value='+'>+</option>
-              <option value='-'>-</option>
-            </select>
+            <input type="number" name='biceps' id='biceps'>
           </td>
           <td>
             <label for='popliteal'>Popliteal: +</label>
-            <select name='popliteal' id='popliteal'>
-              <option value='+'>+</option>
-              <option value='-'>-</option>
-            </select>
+            <input type="number" name='popliteal' id='popliteal'>
             bilat
           </td>
         </tr>
         <tr>
           <td>
             <label for='extensor-digitorum'>Extensor Digitorum: +</label>
-            <select name='extensor-digitorum' id='extensor-digitorum'>
-              <option value='+'>+</option>
-              <option value='-'>-</option>
-            </select>
+            <input type="number" name='extensor-digitorum' id='extensor-digitorum'>
           </td>
           <td>
             <label for='dorsalis-pedis'>Dorsalis Pedis: +</label>
-            <select name='dorsalis-pedis' id='dorsalis-pedis'>
-              <option value='+'>+</option>
-              <option value='-'>-</option>
-            </select>
+            <input type="number" name='dorsalis-pedis' id='dorsalis-pedis'>
             bilat
           </td>
         </tr>
         <tr>
           <td>
             <label for='patellar'>Patellar: +</label>
-            <select name='patellar' id='patellar'>
-              <option value='+'>+</option>
-              <option value='-'>-</option>
-            </select>
+            <input type="number" name='patellar' id='patellar'>
           </td>
           <td>
             <label for='radial'>Radial: +</label>
-            <select name='radial' id='radial'>
-              <option value='+'>+</option>
-              <option value='-'>-</option>
-            </select>
+            <input type="number" name='radial' id='radial'>
             bilat
           </td>
         </tr>
         <tr>
           <td>
             <label for='achilles'>Achilles: +</label>
-            <select name='achilles' id='achilles'>
-              <option value='+'>+</option>
-              <option value='-'>-</option>
-            </select>
+            <input type="number" name='achilles' id='achilles'>
           </td>
           <td></td>
         </tr>
         <tr>
           <td>
             <label for='babinsky'>Babinsky:</label>
-            <input type='text' name='babinsky' id='babinsky'>
+            <input type="number" name='achilles' id='achilles'>
           </td>
         </tr>
         <td></td>
@@ -292,7 +275,11 @@
         <tr>
           <td>
             <label for='foramidal'>Max Foraminal Compression:</label>  
-            <span>(<input type="text" id="foramidal" name="foramidal">)</span> 
+            <span>(<select name='foramidal' id='foramidal'>
+                    <option value='+'>+</option>
+                    <option value='-'>-</option>
+                    </select>)
+            </span> 
             <label for='foramidal-pain'>positive for pain</label>
             <input type="text" name='foramidal-pain' id="foramidal-pain">
           </td>
@@ -300,13 +287,23 @@
         <tr>
           <td>
             <label for="cervical-distraction">Cervical Distraction:</label>
-            <span>(<input type="text" name="cervical-distraction" id="cervical-distraction">)</span>
+            <span>(<select name='cervical-distraction' id='cervical-distraction'>
+                    <option value='+'>+</option>
+                    <option value='-'>-</option>
+                    </select>)
+            </span>
+            <label for='cervical-pain'>positive for pain</label>
+            <input type="text" name='cervical-pain' id="cervical-pain">
           </td>
         </tr>
         <tr>
           <td>
             <label for='shoulder-depression'>Shoulder Depression:</label>  
-            <span>(<input type="text" id="shoulder-depression" name="shoulder-depression">)</span> 
+            <span>(<select name='shoulder-depression' id='shoulder-depression'>
+                    <option value='+'>+</option>
+                    <option value='-'>-</option>
+                    </select>)
+            </span>
             <label for='shoulder-pain'>positive for pain</label>
             <input type="text" name='shoulder-pain' id="shoulder-pain">
           </td>
@@ -314,33 +311,59 @@
         <tr>
           <td>
             <label for='slr'>SLR</label>
-            <span>(<input type="text" id="slr" name="slr">)</span>
+            <span>(<select name='slr' id='slr'>
+                    <option value='+'>+</option>
+                    <option value='-'>-</option>
+                    </select>)
+            </span>
             <label for='slr-pain'>pain @</label>
-            <input type="text" id="slr-pain" name='slr-pain'>
+            <input type="number" min="0" id="slr-pain" name='slr-pain'>
             <span>degrees</span>
+            <label for='slr-positive-pain'>positive for pain</label>
+            <input type="text" name='slr-positive-pain' id="slr-positive-pain">
           </td>
         </tr>
         <tr>
           <td>
             <label for='wlr'>WLR</label>
-            <span>(<input type="text" id="wlr" name="wlr">)</span>
+            <span>(<select name='wlr' id='wlr'>
+                    <option value='+'>+</option>
+                    <option value='-'>-</option>
+                    </select>)
+            </span>
             <label for='wlr-pain'>pain @</label>
-            <input type="text" id="wlr-pain" name='wlr-pain'>
+            <input type="number" min="0" id="wlr-pain" name='wlr-pain'>
             <span>degrees</span>
+            <label for='wlr-positive-pain'>positive for pain</label>
+            <input type="text" name='wlr-positive-pain' id="wlr-positive-pain">
           </td>
         </tr>
         <tr>
           <td>
             <label for='p-faber'>Patrick FABER</label>
-            <span>(<input type="text" id="p-faber" name="p-faber">)</span>
+            <span>(<select name='p-faber' id='p-faber'>
+                    <option value='+'>+</option>
+                    <option value='-'>-</option>
+                    </select>)
+            </span>
+            <span id="p-faber-l">L</span>
+            <span id="p-faber-r">R</span>
+            <label for='faber-positive-pain'>positive for pain</label>
+            <input type="text" name='faber-positive-pain' id="faber-positive-pain">
           </td>
         </tr>
         <tr>
           <td>
             <label for='gaenslens'>Gaenslens:</label>
-            <span>(<input type="text" id="gaenslens" name="gaenslens">)</span>
-            <span>L</span>
-            <span>R</span>
+            <span>(<select name='gaenslens' id='gaenslens'>
+                    <option value='+'>+</option>
+                    <option value='-'>-</option>
+                    </select>)
+            </span>
+            <span id="gaenslens-l">L</span>
+            <span id="gaenslens-r">R</span>
+            <label for='gaenslens-positive-pain'>positive for pain</label>
+            <input type="text" name='gaenslens-positive-pain' id="gaenslens-positive-pain">
           </td>
         </tr>
         <tr>
@@ -358,16 +381,16 @@
       <tbody>
         <tr>
           <td>
-            <input type="text" name="myospasm" id='myospasm'><label for="myospasm">Myospasm</label></tr>
+            <input type="checkbox" name="myospasm" id='myospasm'><label for="myospasm">Myospasm</label></tr>
           </td>
         <tr>
           <td>
-            <input type="text" name="point-tenderness" id='point-tenderness'><label for="point-tenderness">Point Tenderness</label>
+            <input type="checkbox" name="point-tenderness" id='point-tenderness'><label for="point-tenderness">Point Tenderness</label>
           </td>
         </tr>
         <tr>
           <td>
-            <input type="text" name="trigger-points" id='trigger-points'><label for="trigger-points">Trigger Points</label>
+            <input type="checkbox" name="trigger-points" id='trigger-points'><label for="trigger-points">Trigger Points</label>
           </td>
         </tr>
       </tbody>
@@ -375,7 +398,7 @@
   </section>
 
   <section>
-    <table>
+    <table id='ctl'>
       <thead>
         <tr>
           <th colspan='13'><span id="c">C</span><span id="t">T</span><span id="l">L</span><span id="extremity">Extremity</span></th>
@@ -424,9 +447,17 @@
           <td colspan='2'>SI</td>
           <td colspan='2'>L</td>
           <td colspan='2'>R</td>
-          <td colspan="3">Short Leg</td>
-          <td colspan="2"><label for='short-leg-r'>R</label><input type="text" name="short-leg-r" id="short-leg-r"></td>
-          <td colspan="2"><label for='short-leg-l'>L</label><input type="text" name="short-leg-l" id="short-leg-l"></td>
+          <td colspan="2">Short Leg</td>
+          <td colspan="2">
+            <label for='short-leg-r'>R</label>
+            <input type="number" name="short-leg-r" id="short-leg-r">
+            <span>"</span>
+          </td>
+          <td colspan="2">
+            <label for='short-leg-l'>L</label>
+            <input type="number" name="short-leg-l" id="short-leg-l">
+            <span>"</span>
+          </td>
         </tr>
       </tbody>
     </table>

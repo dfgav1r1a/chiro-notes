@@ -3,13 +3,35 @@
 * {
   /* border: solid black 1px; */
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
   padding: 0;
 }
 
 html {
   height: 100%;
-  font-family: 'Montserrat', sans-serif;
   width: 100%;
+}
+
+input[type='number'] {
+  border-radius: 5px;
+  text-align: center;
+  width: 40px;
+}
+
+input[type='text'] {
+  border: none;
+  border-bottom: solid black 2px;
+  padding-left: 3px;
+}
+
+input[type="text"]:focus {
+  border: none;
+  background-color: lightblue;
+}
+
+select {
+  border: none;
+  border-bottom: solid black 2px;
 }
 
 .header {
@@ -85,4 +107,8 @@ sensory {
 #reflexes-peripheral input {
   width: 30px;
   border-radius: 5px;
+}
+
+table {
+  width: 50%;
 }
