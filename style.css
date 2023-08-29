@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+/*Global rules*/
 * {
   /* border: solid black 1px; */
   margin: 0;
@@ -13,78 +14,75 @@ html {
 }
 
 input[type='number'] {
-  border-radius: 5px;
   text-align: center;
   width: 40px;
 }
 
-input[type='text'] {
+input[type='text'],
+input[type='number'] {
   border: none;
   border-bottom: solid black 2px;
   padding-left: 3px;
-}
-
-input[type="text"]:focus {
-  border: none;
-  background-color: lightblue;
+  font-size: 16px;
 }
 
 select {
   border: none;
   border-bottom: solid black 2px;
+  font-size: 16px;
 }
 
+input[type="text"]:focus,
+input[type='number']:focus,
+select:focus {
+  background-color: lightblue;
+}
+
+/*rules for elements*/
 .header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin-bottom: 1em;
+  height: 50px;
+  font-size: 18px;
 }
 
-.cervical-range, 
-.lumbar-range,
-.motor,
-sensory {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 1em;
-  gap: 2px;
-  padding-bottom: 2px;
+.section-one th,
+.section-two th,
+.section-three th,
+.section-four th {
+  font-size: 1.5em;
+  height: 50px;
 }
 
-.cervical-range > *,
-.lumbar-range > * {
-  flex-basis: 15%;
+.section-one table * {
+  border: solid black 1px;
 }
 
-.motor,
-.sensory {
-  flex-basis: 100%;
+.section-four {
+  width: 70%
 }
 
-.cervical-range > h2,
-.lumbar-range > h2 {
-  flex: 100%;
-  margin-bottom: 2px;
+.section-five {
+  float: right;
 }
 
-.cervical-range input,
-.lumbar-range input {
-  width: 40px;
-  border-radius: 5px;
-  text-align: center;
+.section-six table * {
+  border: solid black 1px;
 }
 
-/* .section-three {
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%;
-} */
+#cervical-range,
+#lumbar-range {
+  width: 100%;
+}
 
+#cervical-range,
+#lumbar-range,
 #motor,
 #sensory,
 #reflexes-peripheral {
-  margin-bottom: 5px;
+  margin-bottom: 1em;
 }
 
 #wnl,
@@ -94,21 +92,7 @@ sensory {
   cursor: pointer;
 }
 
-#motor th,
-#sensory th,
 #reflexes-peripheral th {
-  font-size: 1.5em;
-}
-
-#reflexes-peripheral th{
   text-align: left;
 }
 
-#reflexes-peripheral input {
-  width: 30px;
-  border-radius: 5px;
-}
-
-table {
-  width: 50%;
-}

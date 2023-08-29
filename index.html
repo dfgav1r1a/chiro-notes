@@ -24,114 +24,128 @@
     </div>
   </header>
 
-  <section class='cervical-range'>
-    <h2>Cervical Range of Motion</h2>
-    
-    <p>Flexion reduced by</p>
-    <input type='number'>
-    <p id='%'>%</p>
-    <input type="checkbox">
-    <p>Full normal active range</p>
-    <input type='checkbox'>
-    <p id='end'>end range pain</p>
-
-    <p>Extension reduced by</p>
-    <input type='number'>
-    <p id='%'>%</p>
-    <input type="checkbox">
-    <p>Full normal active range</p>
-    <input type='checkbox'>
-    <p>end range pain</p>
-
-    <p>R Lateral Bend reduced by</p>
-    <input type='number'>
-    <p id='%'>%</p>
-    <input type="checkbox">
-    <p>Full normal active range</p>
-    <input type='checkbox'>
-    <p>end range pain</p>
-
-    <p>L Lateral Bend reduced by</p>
-    <input type='number'>
-    <p id='%'>%</p>
-    <input type="checkbox">
-    <p>Full normal active range</p>
-    <input type='checkbox'>
-    <p>end range pain</p>
-
-    <p>R Rotation reduced by</p>
-    <input type='number'>
-    <p id='%'>%</p>
-    <input type="checkbox">
-    <p>Full normal active range</p>
-    <input type='checkbox'>
-    <p>end range pain</p>
-
-    <p>L Rotation reduced by</p>
-    <input type='number'>
-    <p id='%'>%</p>
-    <input type="checkbox">
-    <p>Full normal active range</p>
-    <input type='checkbox'>
-    <p>end range pain</p>
+  <section class="section-one">
+    <table id="cervical-range">
+      <thead>
+        <tr>
+          <th colspan="6">Cervical Range of Motion</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><label for="cervical-flexion-reduced">Flexion reduced by</label></td>
+          <td><input type='number' name="cervical-flexion-reduced" id="cervical-flexion-reduced"><span>%</span></td>
+          <td><input type="checkbox" name="cervical-flexion-active-range" id="cervical-flexion-active-range"></td>
+          <td><label for="cervical-flexion-active-range">Full normal active range</label></td>
+          <td><input type="checkbox" name="cervical-flexion-range-pain" id="cervical-flexion-range-pain"></td>
+          <td><label for="cervical-flexion-range-pain">end range pain</label></td>
+        </tr>
+        <tr>
+          <td><label for="cervical-extension-reduced">Extension reduced by</label></td>
+          <td><input type='number' name="cervical-extension-reduced" id="cervical-extension-reduced"><span>%</span></td>
+          <td><input type="checkbox" name="cervical-extension-active-range" id="cervical-extension-active-range"></td>
+          <td><label for="cervical-extension-active-range">Full normal active range</label></td>
+          <td><input type="checkbox" name="cervical-extension-range-pain" id="cervical-extension-range-pain"></td>
+          <td><label for="cervical-extension-range-pain">end range pain</label></td>
+        </tr>
+        <tr>
+          <td><label for="cervical-r-bend-reduced">R Lateral Bend reduced by</label></td>
+          <td><input type='number' name="cervical-r-bend-reduced" id="cervical-r-bend-reduced"><span>%</span></td>
+          <td><input type="checkbox" name="cervical-r-bend-active-range" id="cervical-r-bend-active-range"></td>
+          <td><label for="cervical-r-bend-active-range">Full normal active range</label></td>
+          <td><input type="checkbox" name="cervical-r-bend-range-pain" id="cervical-r-bend-range-pain"></td>
+          <td><label for="cervical-r-bend-range-pain">end range pain</label></td>
+        </tr>
+        <tr>
+          <td><label for="cervical-l-bend-reduced">L Lateral Bend reduced by</label></td>
+          <td><input type='number' name="cervical-l-bend-reduced" id="cervical-l-bend-reduced"><span>%</span></td>
+          <td><input type="checkbox" name="cervical-l-bend-active-range" id="cervical-l-bend-active-range"></td>
+          <td><label for="cervical-l-bend-active-range">Full normal active range</label></td>
+          <td><input type="checkbox" name="cervical-l-bend-range-pain" id="cervical-l-bend-range-pain"></td>
+          <td><label for="cervical-l-bend-range-pain">end range pain</label></td>
+        </tr>
+        <tr>
+          <td><label for="cervical-r-rotation-reduced">R Rotation reduced by</label></td>
+          <td><input type='number' name="cervical-r-rotation-reduced" id="cervical-r-rotation-reduced"><span>%</span></td>
+          <td><input type="checkbox" name="cervical-r-rotation-active-range" id="cervical-r-rotation-active-range"></td>
+          <td><label for="cervical-r-rotation-active-range">Full normal active range</label></td>
+          <td><input type="checkbox" name="cervical-r-rotation-range-pain" id="cervical-r-rotation-range-pain"></td>
+          <td><label for="cervical-r-rotation-range-pain">end range pain</label></td>
+        </tr>
+        <tr>
+          <td><label for="cervical-l-rotation-reduced">L Rotation reduced by</label></td>
+          <td><input type='number' name="cervical-l-rotation-reduced" id="cervical-l-rotation-reduced"><span>%</span></td>
+          <td><input type="checkbox" name="cervical-l-rotation-active-range" id="cervical-l-rotation-active-range"></td>
+          <td><label for="cervical-l-rotation-active-range">Full normal active range</label></td>
+          <td><input type="checkbox" name="cervical-l-rotation-range-pain" id="cervical-l-rotation-range-pain"></td>
+          <td><label for="cervical-l-rotation-range-pain">end range pain</label></td>
+        </tr>
+      </tbody>
+    </table>
   </section>
 
-  <section class='lumbar-range'>
-    <h2>Lumbar Range of Motion</h2>
-    
-    <p>Flexion reduced by</p>
-    <input type='number'>
-    <p id='%'>%</p>
-    <input type="checkbox">
-    <p>Full normal active range</p>
-    <input type='checkbox'>
-    <p>end range pain</p>
-
-    <p>Extension reduced by</p>
-    <input type='number'>
-    <p id='%'>%</p>
-    <input type="checkbox">
-    <p>Full normal active range</p>
-    <input type='checkbox'>
-    <p>end range pain</p>
-
-    <p>R Lateral Bend reduced by</p>
-    <input type='number'>
-    <p id='%'>%</p>
-    <input type="checkbox">
-    <p>Full normal active range</p>
-    <input type='checkbox'>
-    <p>end range pain</p>
-
-    <p>L Lateral Bend reduced by</p>
-    <input type='number'>
-    <p id='%'>%</p>
-    <input type="checkbox">
-    <p>Full normal active range</p>
-    <input type='checkbox'>
-    <p>end range pain</p>
-
-    <p>R Rotation reduced by</p>
-    <input type='number'>
-    <p id='%'>%</p>
-    <input type="checkbox">
-    <p>Full normal active range</p>
-    <input type='checkbox'>
-    <p>end range pain</p>
-
-    <p>L Rotation reduced by</p>
-    <input type='number'>
-    <p id='%'>%</p>
-    <input type="checkbox">
-    <p>Full normal active range</p>
-    <input type='checkbox'>
-    <p>end range pain</p>
+  <section class="section-two">
+    <table id="lumbar-range">
+      <thead>
+        <tr id='title'>
+          <th colspan="6">Lumbar Range of Motion</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><label for="lumbar-flexion-reduced">Flexion reduced by</label></td>
+          <td><input type='number' name="lumbar-flexion-reduced" id="lumbar-flexion-reduced"><span>%</span></td>
+          <td><input type="checkbox" name="lumbar-flexion-active-range" id="lumbar-flexion-active-range"></td>
+          <td><label for="lumbar-flexion-active-range">Full normal active range</label></td>
+          <td><input type="checkbox" name="lumbar-flexion-range-pain" id="lumbar-flexion-range-pain"></td>
+          <td><label for="lumbar-flexion-range-pain">end range pain</label></td>
+        </tr>
+        <tr>
+          <td><label for="lumbar-extension-reduced">Extension reduced by</label></td>
+          <td><input type='number' name="lumbar-extension-reduced" id="lumbar-extension-reduced"><span>%</span></td>
+          <td><input type="checkbox" name="lumbar-extension-active-range" id="lumbar-extension-active-range"></td>
+          <td><label for="lumbar-extension-active-range">Full normal active range</label></td>
+          <td><input type="checkbox" name="lumbar-extension-range-pain" id="lumbar-extension-range-pain"></td>
+          <td><label for="lumbar-extension-range-pain">end range pain</label></td>
+        </tr>
+        <tr>
+          <td><label for="lumbar-r-bend-reduced">R Lateral Bend reduced by</label></td>
+          <td><input type='number' name="lumbar-r-bend-reduced" id="lumbar-r-bend-reduced"><span>%</span></td>
+          <td><input type="checkbox" name="lumbar-r-bend-active-range" id="lumbar-r-bend-active-range"></td>
+          <td><label for="lumbar-r-bend-active-range">Full normal active range</label></td>
+          <td><input type="checkbox" name="lumbar-r-bend-range-pain" id="lumbar-r-bend-range-pain"></td>
+          <td><label for="lumbar-r-bend-range-pain">end range pain</label></td>
+        </tr>
+        <tr>
+          <td><label for="lumbar-l-bend-reduced">L Lateral Bend reduced by</label></td>
+          <td><input type='number' name="lumbar-l-bend-reduced" id="lumbar-l-bend-reduced"><span>%</span></td>
+          <td><input type="checkbox" name="lumbar-l-bend-active-range" id="lumbar-l-bend-active-range"></td>
+          <td><label for="lumbar-l-bend-active-range">Full normal active range</label></td>
+          <td><input type="checkbox" name="lumbar-l-bend-range-pain" id="lumbar-l-bend-range-pain"></td>
+          <td><label for="lumbar-l-bend-range-pain">end range pain</label></td>
+        </tr>
+        <tr>
+          <td><label for="lumbar-r-rotation-reduced">R Rotation reduced by</label></td>
+          <td><input type='number' name="lumbar-r-rotation-reduced" id="lumbar-r-rotation-reduced"><span>%</span></td>
+          <td><input type="checkbox" name="lumbar-r-rotation-active-range" id="lumbar-r-rotation-active-range"></td>
+          <td><label for="lumbar-r-rotation-active-range">Full normal active range</label></td>
+          <td><input type="checkbox" name="lumbar-r-rotation-range-pain" id="lumbar-r-rotation-range-pain"></td>
+          <td><label for="lumbar-r-rotation-range-pain">end range pain</label></td>
+        </tr>
+        <tr>
+          <td><label for="lumbar-l-rotation-reduced">L Rotation reduced by</label></td>
+          <td><input type='number' name="lumbar-l-rotation-reduced" id="lumbar-l-rotation-reduced"><span>%</span></td>
+          <td><input type="checkbox" name="lumbar-l-rotation-active-range" id="lumbar-l-rotation-active-range"></td>
+          <td><label for="lumbar-l-rotation-active-range">Full normal active range</label></td>
+          <td><input type="checkbox" name="lumbar-l-rotation-range-pain" id="lumbar-l-rotation-range-pain"></td>
+          <td><label for="lumbar-l-rotation-range-pain">end range pain</label></td>
+        </tr>
+      </tbody>
+    </table>
   </section>
     
   <section class='section-three'>
-
   <!--for motor-->
-
     <table id='motor'>
       <thead>
         <tr>
@@ -264,7 +278,8 @@
     </table>
   </section>
 
-  <section>
+  <!--orthopedic test-->
+  <section class='section-four'>
     <table id='orthopedic-test'>
       <thead>
         <tr>
@@ -376,7 +391,7 @@
     </table>
   </section>
 
-  <section>
+  <section class="section-five">
     <table>
       <tbody>
         <tr>
@@ -397,7 +412,7 @@
     </table>
   </section>
 
-  <section>
+  <section class="section-six">
     <table id='ctl'>
       <thead>
         <tr>
