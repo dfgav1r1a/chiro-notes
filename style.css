@@ -9,8 +9,14 @@
 }
 
 html {
-  height: 100%;
-  width: 100%;
+  background-color: #b6d5b6;
+  padding: 2em;
+}
+
+body {
+  background-color: #f7faf7;
+  border-radius: 20px;
+  padding: 3em;
 }
 
 input[type='number'] {
@@ -35,7 +41,7 @@ select {
 input[type="text"]:focus,
 input[type='number']:focus,
 select:focus {
-  background-color: lightblue;
+  background-color: #b6b6d5;
 }
 
 /*rules for elements*/
@@ -65,6 +71,8 @@ select:focus {
 }
 
 .section-five {
+  position: absolute;
+  left: 70%;
   float: right;
 }
 
