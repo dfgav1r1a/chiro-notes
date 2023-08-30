@@ -17,6 +17,7 @@ body {
   background-color: #f7faf7;
   border-radius: 20px;
   padding: 3em;
+  box-sizing: border-box;
 }
 
 input[type='number'] {
@@ -54,17 +55,56 @@ select:focus {
   font-size: 18px;
 }
 
-.section-one th,
-.section-two th,
+.section-one-two {
+  margin-bottom: 1em;
+}
+
+.section-one-two table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: auto;
+  letter-spacing: 2px;
+}
+
+.section-one-two td:nth-child(3),
+.section-one-two td:nth-child(5) {
+  text-align: center;
+}
+
+.section-one-two input[type="checkbox"] {
+  appearance: none;
+  cursor: pointer;
+  background-color: #b6b6d5;
+  border: solid #e7f1e7 1px;
+  border-radius: 10%;
+  width: 25px;
+  height: 25px;
+  margin: 2px;
+  padding: 2px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 1.5em
+}
+
+input:checked:after {
+  /* position: absolute; */
+  /* top: 0; */
+  content: '\1F5F8';
+  color: black;
+  font-size: 20px;
+}
+
+.section-one-two th,
 .section-three th,
 .section-four th {
   font-size: 1.5em;
   height: 50px;
+  letter-spacing: 2px;
 }
 
-.section-one table * {
+/* .section-one-two table * {
   border: solid black 1px;
-}
+} */
 
 .section-four {
   width: 70%
@@ -80,13 +120,6 @@ select:focus {
   border: solid black 1px;
 }
 
-#cervical-range,
-#lumbar-range {
-  width: 100%;
-}
-
-#cervical-range,
-#lumbar-range,
 #motor,
 #sensory,
 #reflexes-peripheral {
