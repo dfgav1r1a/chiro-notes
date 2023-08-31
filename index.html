@@ -146,136 +146,141 @@
     
   <section class='section-three'>
   <!--for motor-->
-    <table id='motor'>
-      <thead>
-        <tr>
-          <th>Motor:</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>C5:</td>
-          <td><label for="c5-r":>R:</label> <input type="number" min='0' max="5" name="c5-r" id="c5-r"> /5</td>
-          <td><label for="c5-l":>L: <input type="number" min='0' max="5" name="c5-l" id="c5-l"> /5</td>
-          <td>L1-3:</td>
-          <td><label for='l1-3-r'>R+</label> <input type='number' min='0' max="5" name="l1-3-r" id="l1-3-r"> /5</td>
-          <td><label for="l1-3-l">L+</label> <input type='number' min='0' max="5" name="l1-3-l" id="l1-3-l"> /5</td>
-        </tr>
-        <tr>
-          <td>C6:</td>
-          <td><label for="c6-r":>R:</label> <input type="number" min='0' max="5" name="c6-r" id="c6-r"> /5</td>
-          <td><label for="c6-l":>L: <input type="number" min='0' max="5" name="c6-l" id="c6-l"> /5</td>
-          <td>L4:</td>
-          <td><label for='l4-r'>R+</label> <input type='number' min='0' max="5" name="l4-r" id="l4-r"> /5</td>
-          <td><label for="l4-l">L+</label> <input type='number' min='0' max="5" name="l4-l" id="l4-l"> /5</td>
-        </tr>
-        <tr>
-          <td>C7:</td>
-          <td><label for="c7-r":>R:</label> <input type="number" min='0' max="5" name="c7-r" id="c7-r"> /5</td>
-          <td><label for="c7-l":>L: <input type="number" min='0' max="5" name="c7-l" id="c7-l"> /5</td>
-          <td>L5:</td>
-          <td><label for='l5-r'>R+</label> <input type='number' min='0' max="5" name="l5-r" id="l5-r"> /5</td>
-          <td><label for="l5-l">L+</label> <input type='number' min='0' max="5" name="l5-l" id="l5-l"> /5</td>
-        </tr>
-        <tr>
-          <td>C8:</td>
-          <td><label for="c8-r":>R:</label> <input type="number" min='0' max="5" name="c8-r" id="c8-r"> /5</td>
-          <td><label for="c8-l":>L: <input type="number" min='0' max="5" name="c8-l" id="c8-l"> /5</td>
-          <td>S1:</td>
-          <td><label for='s1-r'>R+</label> <input type='number' min='0' max="5" name="s1-r" id="s1-r"> /5</td>
-          <td><label for="s1-l">L+</label> <input type='number' min='0' max="5" name="s1-l" id="s1-l"> /5</td>
-        </tr>
-        <tr>
-          <td>T1:</td>
-          <td><label for="t1-r":>R:</label> <input type="number" min='0' max="5" name="t1-r" id="t1-r"> /5</td>
-          <td><label for="t1-l":>L: <input type="number" min='0' max="5" name="t1-l" id="t1-l"> /5</td>
-        </tr>
-      </tbody>
-    </table>
-    
-  <!--for sensory-->
-
-    <table id='sensory'>
-      <thead>
-        <tr>
-          <th>Sensory:</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Light Touch:</td>
-          <td>C5 - T1 Bilat</td>
-          <td><span id="wnl">WNL</span><span>/</span></td>
-          <td><span id="hypo">Hypo</span><span>/</span></td>
-          <td><span id="hyper">Hyper</span></td>
-        </tr>
-        <tr>
+    <div class="section-three-tables">
+      <table id='motor'>
+        <thead>
+          <tr>
+            <th colspan="6">Motor:</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>C5:</td>
+            <td><label for="c5-r":>R:</label> <input type="number" min='0' max="5" name="c5-r" id="c5-r"> /5</td>
+            <td><label for="c5-l":>L: <input type="number" min='0' max="5" name="c5-l" id="c5-l"> /5</td>
+            <td>L1-3:</td>
+            <td><label for='l1-3-r'>R+</label> <input type='number' min='0' max="5" name="l1-3-r" id="l1-3-r"> /5</td>
+            <td><label for="l1-3-l">L+</label> <input type='number' min='0' max="5" name="l1-3-l" id="l1-3-l"> /5</td>
+          </tr>
+          <tr>
+            <td>C6:</td>
+            <td><label for="c6-r":>R:</label> <input type="number" min='0' max="5" name="c6-r" id="c6-r"> /5</td>
+            <td><label for="c6-l":>L: <input type="number" min='0' max="5" name="c6-l" id="c6-l"> /5</td>
+            <td>L4:</td>
+            <td><label for='l4-r'>R+</label> <input type='number' min='0' max="5" name="l4-r" id="l4-r"> /5</td>
+            <td><label for="l4-l">L+</label> <input type='number' min='0' max="5" name="l4-l" id="l4-l"> /5</td>
+          </tr>
+          <tr>
+            <td>C7:</td>
+            <td><label for="c7-r":>R:</label> <input type="number" min='0' max="5" name="c7-r" id="c7-r"> /5</td>
+            <td><label for="c7-l":>L: <input type="number" min='0' max="5" name="c7-l" id="c7-l"> /5</td>
+            <td>L5:</td>
+            <td><label for='l5-r'>R+</label> <input type='number' min='0' max="5" name="l5-r" id="l5-r"> /5</td>
+            <td><label for="l5-l">L+</label> <input type='number' min='0' max="5" name="l5-l" id="l5-l"> /5</td>
+          </tr>
+          <tr>
+            <td>C8:</td>
+            <td><label for="c8-r":>R:</label> <input type="number" min='0' max="5" name="c8-r" id="c8-r"> /5</td>
+            <td><label for="c8-l":>L: <input type="number" min='0' max="5" name="c8-l" id="c8-l"> /5</td>
+            <td>S1:</td>
+            <td><label for='s1-r'>R+</label> <input type='number' min='0' max="5" name="s1-r" id="s1-r"> /5</td>
+            <td><label for="s1-l">L+</label> <input type='number' min='0' max="5" name="s1-l" id="s1-l"> /5</td>
+          </tr>
+          <tr>
+            <td>T1:</td>
+            <td><label for="t1-r":>R:</label> <input type="number" min='0' max="5" name="t1-r" id="t1-r"> /5</td>
+            <td><label for="t1-l":>L: <input type="number" min='0' max="5" name="t1-l" id="t1-l"> /5</td>
+          </tr>
+        </tbody>
+      </table>
+      
+    <!--for sensory-->
+  
+      <table id='sensory'>
+        <thead>
+          <tr>
+            <th colspan="6">Sensory:</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Light Touch:</td>
+            <td>C5 - T1 Bilat</td>
+            <td><span id="wnl">WNL</span><span>/</span></td>
+            <td><span id="hypo">Hypo</span><span>/</span></td>
+            <td><span id="hyper">Hyper</span></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>L1 - S1 Bilat</td>
+            <td><span id="wnl">WNL</span><span> /</span></td>
+            <td><span id="hypo">Hypo</span> <span>/</span></td>
+            <td><span id="hyper">Hyper</span></td>
+          </tr>
+        </tbody>
+      </table>
+  
+    <!--for reflexes and peripheral pulse-->
+      <table id='reflexes-peripheral'>
+        <thead>
+          <tr>
+            <th>Reflexes:</th>
+            <th>Peripheral Pulse:</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><label for='biceps'>Biceps: +</label>
+              <input type="number" name='biceps' id='biceps'>
+            </td>
+            <td>
+              <label for='popliteal'>Popliteal: +</label>
+              <input type="number" name='popliteal' id='popliteal'>
+              bilat
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for='extensor-digitorum'>Extensor Digitorum: +</label>
+              <input type="number" name='extensor-digitorum' id='extensor-digitorum'>
+            </td>
+            <td>
+              <label for='dorsalis-pedis'>Dorsalis Pedis: +</label>
+              <input type="number" name='dorsalis-pedis' id='dorsalis-pedis'>
+              bilat
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for='patellar'>Patellar: +</label>
+              <input type="number" name='patellar' id='patellar'>
+            </td>
+            <td>
+              <label for='radial'>Radial: +</label>
+              <input type="number" name='radial' id='radial'>
+              bilat
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for='achilles'>Achilles: +</label>
+              <input type="number" name='achilles' id='achilles'>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              <label for='babinsky'>Babinsky:</label>
+              <input type="number" name='achilles' id='achilles'>
+            </td>
+          </tr>
           <td></td>
-          <td>L1 - S1 Bilat</td>
-          <td><span id="wnl">WNL</span><span> /</span></td>
-          <td><span id="hypo">Hypo</span> <span>/</span></td>
-          <td><span id="hyper">Hyper</span></td>
-        </tr>
-      </tbody>
-    </table>
-
-  <!--for reflexes and peripheral pulse-->
-    <table id='reflexes-peripheral'>
-      <thead>
-        <tr>
-          <th>Reflexes:</th>
-          <th>Peripheral Pulse:</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><label for='biceps'>Biceps: +</label>
-            <input type="number" name='biceps' id='biceps'>
-          </td>
-          <td>
-            <label for='popliteal'>Popliteal: +</label>
-            <input type="number" name='popliteal' id='popliteal'>
-            bilat
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for='extensor-digitorum'>Extensor Digitorum: +</label>
-            <input type="number" name='extensor-digitorum' id='extensor-digitorum'>
-          </td>
-          <td>
-            <label for='dorsalis-pedis'>Dorsalis Pedis: +</label>
-            <input type="number" name='dorsalis-pedis' id='dorsalis-pedis'>
-            bilat
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for='patellar'>Patellar: +</label>
-            <input type="number" name='patellar' id='patellar'>
-          </td>
-          <td>
-            <label for='radial'>Radial: +</label>
-            <input type="number" name='radial' id='radial'>
-            bilat
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for='achilles'>Achilles: +</label>
-            <input type="number" name='achilles' id='achilles'>
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <label for='babinsky'>Babinsky:</label>
-            <input type="number" name='achilles' id='achilles'>
-          </td>
-        </tr>
-        <td></td>
-      </tbody>
-    </table>
+        </tbody>
+      </table>
+    </div>
+    <div class="image-container">
+      <!-- <img src="./pain-map-1.png"> -->
+    </div>
   </section>
 
   <!--orthopedic test-->

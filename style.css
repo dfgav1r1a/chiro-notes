@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-/*Global rules*/
+/*Global element rules*/
 * {
   /* border: solid black 1px; */
   margin: 0;
@@ -29,8 +29,10 @@ input[type='text'],
 input[type='number'] {
   border: none;
   border-bottom: solid black 2px;
+  border-radius: 5px 5px 0 0;
   padding-left: 3px;
   font-size: 16px;
+  outline: none;
 }
 
 select {
@@ -43,9 +45,31 @@ input[type="text"]:focus,
 input[type='number']:focus,
 select:focus {
   background-color: #b6b6d5;
+  
 }
 
-/*rules for elements*/
+input[type="checkbox"] {
+  appearance: none;
+  cursor: pointer;
+  background-color: #b6b6d5;
+  border: solid #e7f1e7 1px;
+  border-radius: 10%;
+  width: 25px;
+  height: 25px;
+  margin: 2px;
+  padding: 2px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 1.5em
+}
+
+input[type="checkbox"]:checked:after {
+  content: '\1F5F8';
+  color: black;
+  font-size: 20px;
+}
+
+/*rules for classes*/
 .header {
   display: flex;
   justify-content: space-around;
@@ -71,29 +95,6 @@ select:focus {
   text-align: center;
 }
 
-.section-one-two input[type="checkbox"] {
-  appearance: none;
-  cursor: pointer;
-  background-color: #b6b6d5;
-  border: solid #e7f1e7 1px;
-  border-radius: 10%;
-  width: 25px;
-  height: 25px;
-  margin: 2px;
-  padding: 2px;
-  vertical-align: middle;
-  text-align: center;
-  line-height: 1.5em
-}
-
-input:checked:after {
-  /* position: absolute; */
-  /* top: 0; */
-  content: '\1F5F8';
-  color: black;
-  font-size: 20px;
-}
-
 .section-one-two th,
 .section-three th,
 .section-four th {
@@ -102,12 +103,46 @@ input:checked:after {
   letter-spacing: 2px;
 }
 
-/* .section-one-two table * {
-  border: solid black 1px;
-} */
+.section-three {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  padding: 0 2em 0 2em;
+  /* border: solid black 1px; */
+}
+
+.section-three table {
+  letter-spacing: 2px;
+}
+
+.section-three table td {
+  /* border: solid black 1px; */
+  padding-right: 10px;
+}
+
+#motor,
+#sensory {
+  margin-bottom: 1em;
+  text-align: left;
+  /* letter-spacing: 2px; */
+}
+
+.section-three-tables,
+.image-container {
+  /* width: 50%; */
+  flex-basis: 50%;
+}
+
+.image-container {
+  background-image: url('./pain-map-1.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
 
 .section-four {
-  width: 70%
+  width: 70%;
+  /* padding: 0 2em 0 2em; */
 }
 
 .section-five {
@@ -120,12 +155,6 @@ input:checked:after {
   border: solid black 1px;
 }
 
-#motor,
-#sensory,
-#reflexes-peripheral {
-  margin-bottom: 1em;
-}
-
 #wnl,
 #hypo,
 #hyper {
@@ -133,7 +162,5 @@ input:checked:after {
   cursor: pointer;
 }
 
-#reflexes-peripheral th {
-  text-align: left;
-}
+
 
