@@ -143,7 +143,8 @@
       </tbody>
     </table>
   </section>
-    
+
+<!-- section 3 -->
   <section class='section-three'>
   <!--for motor-->
     <div class="section-three-tables">
@@ -213,8 +214,8 @@
           <tr>
             <td></td>
             <td>L1 - S1 Bilat</td>
-            <td><span id="wnl">WNL</span><span> /</span></td>
-            <td><span id="hypo">Hypo</span> <span>/</span></td>
+            <td><span id="wnl">WNL</span><span>/</span></td>
+            <td><span id="hypo">Hypo</span><span>/</span></td>
             <td><span id="hyper">Hyper</span></td>
           </tr>
         </tbody>
@@ -280,10 +281,11 @@
     </div>
     <div class="image-container">
       <!-- <img src="./pain-map-1.png"> -->
+      <canvas id="pain-chart"></canvas>
     </div>
   </section>
 
-  <!--orthopedic test-->
+  <!--section four-->
   <section class='section-four'>
     <table id='orthopedic-test'>
       <thead>
@@ -394,97 +396,87 @@
         </tr>
       </tbody>
     </table>
+    <div class="section-four-table-container">
+      <table id="myos-tend-trigg">
+        <tbody>
+          <tr>
+            <td>
+              <input type="checkbox" name="myospasm" id='myospasm'><label for="myospasm">Myospasm</label></tr>
+            </td>
+          <tr>
+            <td>
+              <input type="checkbox" name="point-tenderness" id='point-tenderness'><label for="point-tenderness">Point Tenderness</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" name="trigger-points" id='trigger-points'><label for="trigger-points">Trigger Points</label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table id='ctl'>
+        <thead>
+          <tr>
+            <th colspan='13'><span id="c">C</span><span id="t">T</span><span id="l">L</span><span id="extremity">Extremity</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>C:</td>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>T</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>T:</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>L:</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>SI</td>
+            <td>L</td>
+            <td>R</td>
+            <td>Short</td>
+            <td>Leg</td>
+            <td><label for="short-leg-r">R</label></td>
+            <td><input type="text" name="short-leg-r" id="short-leg-r" value='"'></td>
+            <td><label for="short-leg-l">L</label></td>
+          <td><input type="text" name="short-leg-l" id="short-leg-l" value='"'></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </section>
 
-  <section class="section-five">
-    <table>
-      <tbody>
-        <tr>
-          <td>
-            <input type="checkbox" name="myospasm" id='myospasm'><label for="myospasm">Myospasm</label></tr>
-          </td>
-        <tr>
-          <td>
-            <input type="checkbox" name="point-tenderness" id='point-tenderness'><label for="point-tenderness">Point Tenderness</label>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <input type="checkbox" name="trigger-points" id='trigger-points'><label for="trigger-points">Trigger Points</label>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
-  <section class="section-six">
-    <table id='ctl'>
-      <thead>
-        <tr>
-          <th colspan='13'><span id="c">C</span><span id="t">T</span><span id="l">L</span><span id="extremity">Extremity</span></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>C:</td>
-          <td>0</td>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
-          <td>7</td>
-          <td>T</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>T:</td>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
-          <td>7</td>
-          <td>8</td>
-          <td>9</td>
-          <td>10</td>
-          <td>11</td>
-          <td>12</td>
-        </tr>
-        <tr>
-          <td>L:</td>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
-          <td>5</td>
-        </tr>
-        <tr>
-          <td colspan='2'>SI</td>
-          <td colspan='2'>L</td>
-          <td colspan='2'>R</td>
-          <td colspan="2">Short Leg</td>
-          <td colspan="2">
-            <label for='short-leg-r'>R</label>
-            <input type="number" name="short-leg-r" id="short-leg-r">
-            <span>"</span>
-          </td>
-          <td colspan="2">
-            <label for='short-leg-l'>L</label>
-            <input type="number" name="short-leg-l" id="short-leg-l">
-            <span>"</span>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
   <script src="script.js"></script>
-
- 
   <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
 </body>
 

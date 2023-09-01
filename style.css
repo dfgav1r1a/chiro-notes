@@ -45,7 +45,7 @@ input[type="text"]:focus,
 input[type='number']:focus,
 select:focus {
   background-color: #b6b6d5;
-  
+
 }
 
 input[type="checkbox"] {
@@ -69,7 +69,7 @@ input[type="checkbox"]:checked:after {
   font-size: 20px;
 }
 
-/*rules for classes*/
+/*rules for classes and children of the classes*/
 .header {
   display: flex;
   justify-content: space-around;
@@ -108,11 +108,13 @@ input[type="checkbox"]:checked:after {
   width: 95%;
   margin: auto;
   padding: 0 2em 0 2em;
+  margin-bottom: 1em;
   /* border: solid black 1px; */
 }
 
 .section-three table {
   letter-spacing: 2px;
+  text-align: left;
 }
 
 .section-three table td {
@@ -124,35 +126,10 @@ input[type="checkbox"]:checked:after {
 #sensory {
   margin-bottom: 1em;
   text-align: left;
-  /* letter-spacing: 2px; */
 }
 
-.section-three-tables,
-.image-container {
-  /* width: 50%; */
-  flex-basis: 50%;
-}
-
-.image-container {
-  background-image: url('./pain-map-1.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-}
-
-.section-four {
-  width: 70%;
-  /* padding: 0 2em 0 2em; */
-}
-
-.section-five {
-  position: absolute;
-  left: 70%;
-  float: right;
-}
-
-.section-six table * {
-  border: solid black 1px;
+#sensory td span:nth-child(2) {
+  margin-left: 10px;
 }
 
 #wnl,
@@ -160,6 +137,76 @@ input[type="checkbox"]:checked:after {
 #hyper {
   border-radius: 5px;
   cursor: pointer;
+}
+
+/* sizing the canvas element */
+#pain-chart {
+  width: 100%;
+  height: 100%;
+}
+
+/* sizing flex elements */
+.section-three-tables,
+.image-container {
+  width: 50%;
+}
+
+/* styles for background image */
+.image-container {
+  background-image: url('./pain-map-1.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  border: 1px solid #b6b6d5;
+  border-radius: 5px;
+}
+
+/* section four */
+
+.section-four {
+  display: flex;
+  width: 95%;
+  margin: auto;
+}
+
+.section-four-table-container {
+  display: flex;
+  flex-flow: column;
+  width: 45%;
+}
+
+#orthopedic-test {
+  width: 55%;
+}
+
+#myos-tend-trigg,
+#ctl {
+  height: 50%
+}
+
+#myos-tend-trigg {
+  margin: auto;
+}
+
+/* styles for the ctl table */
+#ctl {
+  table-layout: fixed;
+  text-align: center;
+  width: 100%
+}
+
+#ctl th span {
+  margin: 0 1em 0 1em;
+}
+
+#ctl input[type='text'] {
+  width: -webkit-fill-available;
+  text-align: center
+}
+
+#ctl td {
+  font-size: 13px;
+  font-weight: bold;
 }
 
 
