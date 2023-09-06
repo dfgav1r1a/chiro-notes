@@ -169,14 +169,14 @@ input[type="checkbox"]:checked:after {
   margin: auto;
 }
 
+#orthopedic-test {
+  width: 55%;
+}
+
 .section-four-table-container {
   display: flex;
   flex-flow: column;
   width: 45%;
-}
-
-#orthopedic-test {
-  width: 55%;
 }
 
 #myos-tend-trigg,
@@ -199,15 +199,23 @@ input[type="checkbox"]:checked:after {
   margin: 0 1em 0 1em;
 }
 
+#ctl td {
+  font-size: 13px;
+  font-weight: bold; 
+}
+
+#ctl tbody td:nth-child(n+2) {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* avoiding border of last row in the tbody */
+#ctl tbody tr:nth-child(4) td {
+  border: none;
+  cursor: text;
+}
+
 #ctl input[type='text'] {
   width: -webkit-fill-available;
   text-align: center
 }
-
-#ctl td {
-  font-size: 13px;
-  font-weight: bold;
-}
-
-
-
