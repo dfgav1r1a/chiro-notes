@@ -2,7 +2,6 @@
 
 /*Global element rules*/
 * {
-  /* border: solid black 1px; */
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   padding: 0;
@@ -109,7 +108,6 @@ input[type="checkbox"]:checked:after {
   margin: auto;
   padding: 0 2em 0 2em;
   margin-bottom: 1em;
-  /* border: solid black 1px; */
 }
 
 .section-three table {
@@ -118,7 +116,6 @@ input[type="checkbox"]:checked:after {
 }
 
 .section-three table td {
-  /* border: solid black 1px; */
   padding-right: 10px;
 }
 
@@ -204,13 +201,14 @@ input[type="checkbox"]:checked:after {
   font-weight: bold; 
 }
 
+/* selection from the second td element on each tr */
 #ctl tbody td:nth-child(n+2) {
   border-radius: 10px;
   cursor: pointer;
 }
 
-/* avoiding border of last row in the tbody */
-#ctl tbody tr:nth-child(4) td {
+/* avoiding border and pointer in last row in the tbody on cells 1 and 4-9 */
+#ctl tbody tr:nth-child(4) td:nth-child(n+4) {
   border: none;
   cursor: text;
 }
