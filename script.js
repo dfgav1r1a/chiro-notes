@@ -13,29 +13,28 @@ const wnl = document.querySelectorAll('#wnl');
 const hypo = document.querySelectorAll('#hypo');
 const hyper = document.querySelectorAll('#hyper');
 
-wnl.forEach(option => option.addEventListener('click', toggle))
-hypo.forEach(option => option.addEventListener('click', toggle))
-hyper.forEach(option => option.addEventListener('click', toggle))
+wnl.forEach(option => option.addEventListener('click', toggle));
+hypo.forEach(option => option.addEventListener('click', toggle));
+hyper.forEach(option => option.addEventListener('click', toggle));
 
 // for selection of items in the C T L table
-const ctlTable = document.querySelectorAll('#ctl tbody tr')
+const ctlTable = document.querySelectorAll('#ctl tbody tr');
 //creating copy of the original array with rows to to split the rows of the table
 const ctlRows = Array.from(ctlTable)
 const ctlRows1_3 = ctlRows.slice(0, 3); 
 const row4 = ctlRows.slice(3);
-console.log(row4)
 //doing an inner for loop inside the forEach because I don't want the first cells to be circled when clicked
 ctlRows1_3.forEach(tr => {
   for (let i = 1; i < tr.cells.length; i ++) {
-      tr.cells[i].addEventListener('click', toggle)
+      tr.cells[i].addEventListener('click', toggle);
     }
-  })
+  });
 //selecting just 2 cells of last row so they are affected by the click
 row4.forEach(tr => {
   for (let i = 1; i < 3; i ++) {
-      tr.cells[i].addEventListener('click', toggle)
+      tr.cells[i].addEventListener('click', toggle);
     }
-})
+});
 
 
 

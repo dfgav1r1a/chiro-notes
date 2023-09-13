@@ -279,9 +279,11 @@
         </tbody>
       </table>
     </div>
-    <div class="image-container">
-      <!-- <img src="./pain-map-1.png"> -->
-      <canvas id="pain-chart"></canvas>
+    <div class="canvas-container">
+      <img src="./images/pain-map-1.png" id='pain-chart'>
+      <button id='draw'><img src='./images/draw.png'></button>
+      <button id='undo'><img src='./images/undo.png'></button>
+      <canvas id="canvas"></canvas>
     </div>
   </section>
 
@@ -475,6 +477,7 @@
   </section>
 
   <script src="script.js"></script>
+  <script src="canvas.js"></script>
   <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
 </body>
 
