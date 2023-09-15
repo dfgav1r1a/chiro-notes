@@ -6,11 +6,9 @@ const canvas = document.getElementById('canvas')
 const context = canvas.getContext('2d', {willReadFrequently: true});
 canvas.width = canvas.offsetWidth;
 canvas.height = canvas.offsetHeight;
-context.save();
 
 //variable to control deleting and drawing functionality 
 let isPainting = false;
-let isDeleting = false;
 
 // storing current drawings for undo functionality
 const drawings = [];

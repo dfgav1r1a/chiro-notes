@@ -36,5 +36,9 @@ row4.forEach(tr => {
     }
 });
 
+//printing button
+const printBtn = document.querySelector('.print button');
+printBtn.onclick = e => window.print();
+
 
 

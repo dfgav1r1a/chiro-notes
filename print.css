@@ -1,0 +1,78 @@
+/* rule for the pages */
+@page {
+  margin: 1cm;  
+}
+
+/* styles for the printed page */
+@media print {
+  
+  html {
+    padding: 0;
+    background-color: white;
+  }
+  
+  body {
+    padding: 0;
+    letter-spacing: normal;
+    font-size: 12pt;
+    background-color: white;
+  }
+  
+  button {
+    display: none;
+  }
+
+  input[type="checkbox"] {
+    border: 1px solid black;
+  }
+
+  .print {
+    display: none;
+  }
+
+  .section-one-two table {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .section-one-two,
+  .section-three {
+    margin-bottom: 2em;
+  }
+
+  .section-three {
+    width: 100%;
+    padding: 0;
+  }
+
+  #canvas {
+    border: none;
+  }
+
+  .section-four {
+    flex-wrap: wrap;
+    gap: 5pt;
+    width: 100%;
+  }
+
+  #orthopedic-test {
+    width: 100%;
+  }
+
+  #orthopedic-test input[type="text"] {
+    width: 60%;
+  }
+
+  .section-four-table-container {
+    flex-flow: row-reverse;
+    width: 100%;
+  }
+
+  #ctl {
+    width: 70%;
+  }
+
+  #myos-tend-trigg {
+    width: 30%
+  }
+}
