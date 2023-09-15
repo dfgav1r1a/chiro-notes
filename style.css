@@ -148,7 +148,9 @@ input[type="checkbox"]:checked:after {
   border-radius: 5px;
 }
 
-#draw, #undo {
+#draw, 
+#undo, 
+#dot {
   position: absolute;
   top: 2px;
   left: 2px;
@@ -160,13 +162,19 @@ input[type="checkbox"]:checked:after {
 }
 
 #draw img, 
-#undo img {
+#undo img,
+#dot img {
   margin: auto;
   width: 60%;
+  vertical-align: middle;
+}
+
+#dot {
+  top: 30px;
 }
 
 #undo {
-  top: 40px;
+  top: 58px;
 }
 
 /* sizing image*/

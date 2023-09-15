@@ -1,6 +1,5 @@
 //button selection
 const drawBtn = document.querySelector('#draw');
-const dotBtn = document.querySelector('#dot');
 const undoBtn = document.querySelector('#undo');
 //this app will use the Canvas 2D API https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D
 const canvas = document.getElementById('canvas')
@@ -30,9 +29,11 @@ drawBtn.onclick = (e) => {
   
   canvas.onmousemove = e => {
     if (!isPainting) return;
+  
     const canvasDOMrect = canvas.getBoundingClientRect();
     const scaleX = canvas.width / canvasDOMrect.width;
     const scaleY = canvas.height / canvasDOMrect.height;
+  
     let x = (e.clientX - canvasDOMrect.left) * scaleX;
     let y = (e.clientY - canvasDOMrect.top) * scaleY;
     context.lineTo(x, y);
@@ -52,26 +53,6 @@ drawBtn.onclick = (e) => {
   }
 }
 
-//dot button
-dot.onclick = e => {
-  canvas.onmousedown = e => {
-    const canvasDOMrect = canvas.getBoundingClientRect();
-    const scaleX = canvas.width / canvasDOMrect.width;
-    const scaleY = canvas.height / canvasDOMrect.height;
-    const circle = new Path2D();
-    let x = (e.clientX - canvasDOMrect.left) * scaleX;
-    let y = (e.clientY - canvasDOMrect.top) * scaleY;
-    circle.arc(x, y, 6, 0, 2 * Math.PI);
-    context.fill(circle)
-    e.preventDefault();
-  };
-  
-  canvas.onmouseup = e => {
-    drawings.push(context.getImageData(0, 0, canvas.width, canvas.height));
-    e.preventDefault();
-  };
-}
-
 // undo button event
 undoBtn.onclick = (e) => {
   e.preventDefault();
@@ -83,4 +64,3 @@ undoBtn.onclick = (e) => {
   drawings.pop();
   context.putImageData(drawings[drawings.length - 1], 0, 0);
 }
-

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <meta name="author" content="Laura Ramirez"/>
+  <meta name="designer" content="Laura Ramirez"/>
   <meta name="developer" content="Daniel Gaviria"/>
   <meta name="description" content=""/>
   <meta name="keywords" content="chiropractic,medical notes"/>
@@ -285,8 +285,9 @@
       </table>
     </div>
     <div class="canvas-container">
-      <img src="./images/pain-map-1.png" id='pain-chart'>
+      <img src="./images/pain-map.png" id='pain-chart'>
       <button id='draw'><img src='./images/draw.png'></button>
+      <button id='dot'><img src='./images/dot.png'></button>
       <button id='undo'><img src='./images/undo.png'></button>
       <canvas id="canvas"></canvas>
     </div>
@@ -305,6 +306,7 @@
           <td>
             <label for='foramidal'>Max Foraminal Compression:</label>  
             <span>(<select name='foramidal' id='foramidal'>
+                    <option value=''></option>
                     <option value='+'>+</option>
                     <option value='-'>-</option>
                     </select>)
@@ -317,6 +319,7 @@
           <td>
             <label for="cervical-distraction">Cervical Distraction:</label>
             <span>(<select name='cervical-distraction' id='cervical-distraction'>
+                    <option value=''></option>
                     <option value='+'>+</option>
                     <option value='-'>-</option>
                     </select>)
@@ -329,6 +332,7 @@
           <td>
             <label for='shoulder-depression'>Shoulder Depression:</label>  
             <span>(<select name='shoulder-depression' id='shoulder-depression'>
+                    <option value=''></option>
                     <option value='+'>+</option>
                     <option value='-'>-</option>
                     </select>)
@@ -341,6 +345,7 @@
           <td>
             <label for='slr'>SLR</label>
             <span>(<select name='slr' id='slr'>
+                    <option value=''></option>
                     <option value='+'>+</option>
                     <option value='-'>-</option>
                     </select>)
@@ -356,6 +361,7 @@
           <td>
             <label for='wlr'>WLR</label>
             <span>(<select name='wlr' id='wlr'>
+                    <option value=''></option>
                     <option value='+'>+</option>
                     <option value='-'>-</option>
                     </select>)
@@ -371,6 +377,7 @@
           <td>
             <label for='p-faber'>Patrick FABER</label>
             <span>(<select name='p-faber' id='p-faber'>
+                    <option value=''></option>
                     <option value='+'>+</option>
                     <option value='-'>-</option>
                     </select>)
@@ -385,6 +392,7 @@
           <td>
             <label for='gaenslens'>Gaenslens:</label>
             <span>(<select name='gaenslens' id='gaenslens'>
+                    <option value=''></option>
                     <option value='+'>+</option>
                     <option value='-'>-</option>
                     </select>)
@@ -487,7 +495,6 @@
 
   <script src="script.js"></script>
   <script src="canvas.js"></script>
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
 </body>
 
 </html>
