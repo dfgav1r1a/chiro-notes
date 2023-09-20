@@ -5,6 +5,7 @@
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -16,35 +17,36 @@ body {
   background-color: #f7faf7;
   border-radius: 20px;
   padding: 3em;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 input[type='number'] {
   text-align: center;
-  width: 40px;
+  width: 30px;
 }
 
 input[type='text'],
 input[type='number'] {
   border: none;
-  border-bottom: solid black 2px;
+  border-bottom: solid black 1px;
   border-radius: 5px 5px 0 0;
   padding-left: 3px;
   font-size: 16px;
   outline: none;
+  font-style: italic;
 }
 
 select {
   border: none;
-  border-bottom: solid black 2px;
+  border-bottom: solid black 1px;
   font-size: 16px;
+  text-align: center;
 }
 
 input[type="text"]:focus,
 input[type='number']:focus,
 select:focus {
   background-color: #b6b6d5;
-
 }
 
 input[type="checkbox"] {
@@ -79,14 +81,42 @@ input[type="checkbox"]:checked:after {
 }
 
 .section-one-two {
+  display: flex;
+  width: 100%;
+  flex-flow: wrap;
   margin-bottom: 1em;
+  padding: 0 2em 0 2em;
 }
 
-.section-one-two table {
-  border-collapse: collapse;
+.section-one-two #cer-lum-tables {
   width: 70%;
-  margin: auto;
+}
+
+#cer-lum-tables table {
+  border-collapse: collapse;
   letter-spacing: 2px;
+  margin: auto;
+  width: 100%;
+}
+
+#notes label {
+  display: inline-block;
+  margin: 0.5em 0;
+  font-size: 1.5em;
+  font-weight: 500;
+  font-style: italic;
+}
+
+#notes textarea {
+  resize: none;
+  width: 100%;
+  height: 88%;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  font-style: italic;
+  padding: 2px 2px;
+  border: 1px solid #b6b6d5;
 }
 
 .section-one-two td:nth-child(3),
@@ -102,9 +132,13 @@ input[type="checkbox"]:checked:after {
   letter-spacing: 2px;
 }
 
+.section-one-two #notes {
+  width: 30%;
+}
+
 .section-three {
   display: flex;
-  width: 95%;
+  width: 100%;
   margin: auto;
   padding: 0 2em 0 2em;
   margin-bottom: 1em;
@@ -252,6 +286,11 @@ input[type="checkbox"]:checked:after {
 #ctl input[type='text'] {
   width: -webkit-fill-available;
   text-align: center
+}
+
+#ctl input[id='ue'],
+#ctl input[id='le'] {
+  text-align: left;
 }
 
 /* print button */

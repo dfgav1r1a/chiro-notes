@@ -26,18 +26,34 @@
     border: 1px solid black;
   }
 
+  /* hidding the arrows in the select elements */
+  select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    font-size: 15pt;
+  }
+
+  select::-ms-expand {
+        display: none;
+      }
+  
   .print {
     display: none;
   }
 
   .section-one-two table {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
   }
 
-  .section-one-two,
-  .section-three {
+  .section-one-two {
     margin-bottom: 2em;
+    padding: 0;
+  }
+
+  #notes textarea {
+    margin-left: 2pt;
+    width: 95%;
   }
 
   .section-three {
