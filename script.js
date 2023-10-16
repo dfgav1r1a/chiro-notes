@@ -2,6 +2,12 @@
 const date = document.querySelector('#date');
 date.valueAsDate = new Date();
 
+//disabling autocomplete functionality of browser for privacy
+const inputs = document.getElementsByTagName('input');
+for(const element of inputs) {
+  element.autocomplete = 'off';
+}
+
 //Function to toggle the border on certain elements in the form
 const toggle = ({target}) => {
   if (target.style.border === 'none') target.style.border = 'solid 1px black'
@@ -40,5 +46,13 @@ row4.forEach(tr => {
 const printBtn = document.querySelector('.print button');
 printBtn.onclick = e => window.print();
 
+//printing instructions
+const modalBox = document.querySelector('.modal');
+const printLink = document.querySelector('.print p');
+const closeModal = document.querySelector('.modal h4');
+
+printLink.onclick = e => modalBox.style.display = 'block';
+
+closeModal.onclick = e => modalBox.style.display = 'none';
 
 

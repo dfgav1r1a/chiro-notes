@@ -17,12 +17,11 @@ body {
   background-color: #f7faf7;
   border-radius: 20px;
   padding: 3em;
-  /* box-sizing: border-box; */
 }
 
 input[type='number'] {
   text-align: center;
-  width: 30px;
+  width: 40px;
 }
 
 input[type='text'],
@@ -182,8 +181,8 @@ input[type="checkbox"]:checked:after {
   border-radius: 5px;
 }
 
-#draw, 
-#undo, 
+#draw,
+#undo,
 #dot {
   position: absolute;
   top: 2px;
@@ -195,7 +194,7 @@ input[type="checkbox"]:checked:after {
   border-radius: 5px;
 }
 
-#draw img, 
+#draw img,
 #undo img,
 #dot img {
   margin: auto;
@@ -268,7 +267,7 @@ input[type="checkbox"]:checked:after {
 
 #ctl td {
   font-size: 13px;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 /* selection from the second td element on each tr */
@@ -293,7 +292,7 @@ input[type="checkbox"]:checked:after {
   text-align: left;
 }
 
-/* print button */
+/* print button section */
 
 .print {
   margin: 2em 0 0 0;
@@ -319,4 +318,68 @@ input[type="checkbox"]:checked:after {
 
 .print button:active {
   transform: translateY(2px);
+}
+
+.print p,
+.modal-content h4 {
+  cursor: pointer;
+  margin: 1em auto;
+  padding: 5px;
+  width: fit-content;
+  text-align: center;
+  transition-duration: 0.3s;
+}
+
+.print p:hover,
+.modal-content h4:hover {
+  background-color: #b6b6d5;
+  border-radius: 5px;
+  color: white;
+}
+
+/* styles for the modal box with printing instructions */
+.modal {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.modal h1 {
+  text-align: center;
+  background-color: #b6b6d5;
+  padding: 1em;
+  border-radius: 10px 10px 0 0;
+}
+
+.modal-content {
+  width: 80%;
+  height: fit-content;
+  margin: 2em auto;
+  border-radius: 10px;
+  background-color:  #f7faf7;
+  padding: 1em;
+}
+
+.instructions {
+  width: 90%;
+  margin: 1em auto;
+}
+
+.instructions ol {
+  margin-top: 2em;
+  margin-left: 2em;
+}
+
+.instructions ul {
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.instructions li {
+  margin-bottom: 1em;
 }

@@ -1,6 +1,10 @@
 /* rule for the pages */
 @page {
-  margin: 1cm;  
+  margin: 1cm !important;
+  margin-left: 1cm;
+  margin-right: 1cm;
+  margin-top: 1cm;
+  margin-bottom: 1cm;
 }
 
 /* styles for the printed page */
@@ -36,24 +40,40 @@
   select::-ms-expand {
         display: none;
       }
-  
+
+  /* hidding arrows from number field */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
   .print {
     display: none;
   }
 
-  .section-one-two table {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .section-one-two {
+   .section-one-two {
     margin-bottom: 2em;
     padding: 0;
   }
+  
+  .section-one-two table {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+ .section-one-two input[type="number"] {
+   text-align: left;
+   width: 30px;
+ }
 
   #notes textarea {
-    margin-left: 2pt;
-    width: 95%;
+    width: 90%;
+    font-size: 9pt;
   }
 
   .section-three {
@@ -67,7 +87,7 @@
 
   .section-four {
     flex-wrap: wrap;
-    gap: 5pt;
+    gap: 4pt;
     width: 100%;
   }
 
