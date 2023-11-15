@@ -1,5 +1,7 @@
 # Chiropractic Medical Notes
 
+[See the application](https://dfgav1r1a.github.io/chiro-notes/)
+
 This project was created as a response to the need of a friendlier interface to create chiropractic medical notes after the patient's first evaluation. The solutions that were used before by the head doctor were -as described- hard to use, not intuitive and very abstract making it hard to keep track of the data that was already inputted into the tool.
 
 Seeing that there was a necessity for an easier way to create the medical notes, I took on the task of creating a custom front-end application that would cater to the doctor's needs. In the process, I partnered with the doctor to design the tool and together decided on the features that would mostly gather the data orderly while having a more pleasant experience and spending considerably less time in the data entering process.
