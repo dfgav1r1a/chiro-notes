@@ -12,12 +12,12 @@ The framework **ElectronJS** was used to turn this project into a custom Windows
 
 ## Purpose and outcome
 
-The **purpose** of this tool is to orderly gather medical data after the patient's first evaluation, in a more convenient way. After the data was entered, the tool will create a PDF file (using the browser's print screen). This PDF will then be saved in a secured server in the patient's record.
+The **purpose** of this tool is to orderly gather medical data after the patient's first evaluation, in a more convenient way. After the data was entered, the tool will create a PDF file (using the browser's print window). This PDF will then be saved in a secured server in the patient's record.
 
 The **outcome** of the tool was saving the doctor 15 minutes of administration time per evaluated patient aside from making the creation of medical notes easier, pleasant and straight forward.
 
 ### Additional Notes
 
-- This application is not mobile friendly as it was meant to be used in a laptop or in a desktop.
+- This application is not mobile friendly as it was meant to be used in a laptop or in a desktop computer.
 
 - This application is an interface to gather medical data, none of this data is being saved in a server which could present an opportunity to extend the functionality of this solution by implementing a backend to save the data securely and make it accessible locally at the doctor's request.
